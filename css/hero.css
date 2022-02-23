@@ -1,0 +1,124 @@
+.hero__wrapper { 
+    background-image: url('../img/bg2.jpg');
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: cover;
+}
+.hero {
+    padding: 15rem 0 40rem;
+    text-align: center;
+    position: relative;
+}
+.hero .title {
+    margin-bottom: 5rem;
+}
+.hero .title span {
+    color: var(--second-brand-color);
+}
+
+
+.contacts {
+    padding: 30rem 0;
+    text-align: center;
+}
+.contacts .sub-title {
+    margin-bottom: 5rem;
+}
+.contacts__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contacts__item:not(:last-child) {
+    margin-bottom: 2rem;
+}
+.contacts__item .text-bold {
+    font-family: var(--title-font);
+    display: block;
+    margin-right: 1rem;
+}
+
+
+.policy__wrapper {
+    background-color: var(--third-brand-color);
+}
+.policy {
+    padding: 20rem 0;
+    text-align: center;
+}
+.policy__item {
+    max-width: 45rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+.policy__item:not(:last-child) {
+    margin-bottom: 5rem;
+}
+.policy__item .sub-title,
+.policy__item .text {
+    margin-bottom: 2rem;
+}
+.policy__item .btn {
+    background-color: transparent;
+    color: var(--fourth-brand-color);
+}
+.policy__item .btn:hover {
+    color: var(--sub-text-color);
+    background-color: var(--fourth-brand-color);
+}
+
+.phrase__wrapper {
+    background-color: var(--fifth-brand-color);
+}
+.phrase {
+    padding: 25rem 0;
+    text-align: center;
+}
+.phrase .sub-title {
+    color: var(--sub-text-color);
+    font-size: 5rem;
+}
+@media screen and (min-width: 1440px) {
+    .hero .title span {
+        font-size: 10rem;
+    }
+
+    .contacts {
+        display: flex;
+        text-align: left;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .contacts .sub-title {
+        margin-bottom: 0;
+        font-size: 6rem;
+        text-transform: uppercase;
+    }
+    .contacts__list {
+        text-align: right;
+    }
+    .contacts__item {
+        justify-content: flex-end;
+    }
+    .contacts__item:not(:last-child) {
+        margin-bottom: 5rem;
+    }
+
+    .policy__item:nth-child(1) {
+        margin-left: 15rem;
+    }
+    .policy__item:nth-child(2) {
+        margin-right: 15rem;
+    }
+
+
+    .phrase__wrapper {
+        background-image: url('../img/bg3.png');
+        background-repeat: no-repeat;
+        background-position: right center;
+        background-size: contain;
+    }
+    .phrase {
+        text-align: left;
+    }
+}

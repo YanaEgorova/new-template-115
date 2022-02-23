@@ -1,0 +1,23 @@
+:root {
+  --main-bg-color: #fff;
+  --sub-bg-color: #000;
+  --main-text-color: #000;
+  --sub-text-color: #fff;
+  --inactive: #818181;
+  --success: #bee3be;
+  --link-color: blue;
+  --accent-color: #ff0000;
+
+
+  --first-brand-color: #b3b3b3;
+  --second-brand-color: #67dff5;
+  --third-brand-color: #e0e0e0;
+  --fourth-brand-color: #ff5e00;
+  --fifth-brand-color: #01002c;
+
+  --main-font:  'Roboto';
+  --title-font:  'Roboto Medium';
+  --main-title-font: 'Roboto Black';
+
+  font-size: 62.5%;
+}

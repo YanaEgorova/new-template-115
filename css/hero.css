@@ -112,13 +112,4 @@
     }
 
 
-    .phrase__wrapper {
-        background-image: url('../img/bg3.png');
-        background-repeat: no-repeat;
-        background-position: right center;
-        background-size: contain;
-    }
-    .phrase {
-        text-align: left;
-    }
 }

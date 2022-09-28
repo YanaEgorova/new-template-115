@@ -16,7 +16,16 @@ let websiteAddress = document.querySelectorAll('.js_website-address');
 let websiteReturnAddress = document.querySelectorAll('.js_website-return-address');
 let websiteDescriptor = document.querySelectorAll('.js_website-desc');
 
-
+const mainPageTitle = document.querySelector('.js_main-title');
+const mainPageSubTitle = document.querySelector('.js_sub-title');
+const MAIN_TAGLINE = 'Online shopping.';
+const SECONDARY_TAGLINE = 'Simple.';
+if(mainPageTitle) {
+    mainPageTitle.textContent = MAIN_TAGLINE;
+}
+if(mainPageSubTitle) {
+    mainPageSubTitle.textContent = SECONDARY_TAGLINE;
+}
 
 
 websiteName = [...websiteName];

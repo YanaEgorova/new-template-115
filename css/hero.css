@@ -9,11 +9,10 @@
     text-align: center;
     position: relative;
 }
-.hero .title {
-    margin-bottom: 5rem;
-}
-.hero .title span {
+
+.title-span {
     color: var(--second-brand-color);
+    margin-bottom: 5rem;
 }
 
 

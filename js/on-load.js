@@ -9,7 +9,7 @@ const totalPrice = document.querySelectorAll('.js_total-price');
 const emptyMessage = document.querySelector('.js_empty-cart');
 const table = document.querySelector('.js_product-table');
 const totalField = document.querySelector('#totalField');
-    const cartField = document.querySelector('#cartField');
+const cartField = document.querySelector('#cartField');
 
 
 window.onload = function() {
@@ -27,7 +27,10 @@ window.onload = function() {
          console.log('lessBtn', lessBtn)
       }
    }
+
+
 };
+
 
 
 function shopPageFunctional() {
@@ -54,6 +57,7 @@ function shopPageFunctional() {
 }
 
 function removeItem(e) {
+
   const btn = e.currentTarget;
   const parent = btn.closest('.js_remove-product-parent');
   const productId = parent.getAttribute('id');
@@ -77,6 +81,8 @@ function removeItem(e) {
   if(updatedCart.length === 0) {
       showEmptyMessage();
   }
+
+
 }
 
 function showEmptyMessage() {

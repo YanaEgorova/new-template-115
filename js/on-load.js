@@ -32,6 +32,7 @@ window.onload = function() {
 };
 
 
+
 function shopPageFunctional() {
    hideEmptyMessage();
    const dataArray = getLocalStorageItem();

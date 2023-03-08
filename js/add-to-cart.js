@@ -61,6 +61,7 @@ function addToCart(e) {
     }
     showSuccessMessage(successMessage, successMessageSpan, name);
 }
+
 }
 
 

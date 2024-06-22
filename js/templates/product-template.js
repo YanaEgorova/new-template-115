@@ -4,7 +4,8 @@ import { dropdown } from './size-dropdown.js';
 
 export const productTemplate = (product, amount) => {
     var clothingSizes = ["XS", "S", "M", "L", "XL"];
-  var ringSizes = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13"];
+    var ringSizes = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13"];
+    var shoeSizes = ["4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16"];
    
     return `
    <div class="prod__block js_prod__block" id="${product.id}">
@@ -60,6 +61,7 @@ v216c0,11.046,8.954,20,20,20s20-8.954,20-20V276h216c11.046,0,20-8.954,20-20C512,
 
        ${product.type == "ring" ? dropdown(ringSizes, "Ring Size:") : ''}
        ${product.type == "clothing" ? dropdown(clothingSizes, "Clothing Size:") : ''}
+        ${product.type == "shoes" ? dropdown(shoeSizes, "Shoes Size:") : ''}
        
        <div class="add__btn-box">
        <p class="text success-message js_success-message">Success! You have added <span class="js_success-product-name"></span> to your shopping cart!</p>

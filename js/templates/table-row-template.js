@@ -1,9 +1,9 @@
-export const tableRowTemplate = (product) => {
+    export const tableRowTemplate = (product) => {
   return `
   <tr id="${product.id}" class="js_remove-product-parent">
   <td class="text">
-  <p>${product.name} ${product.ringSize ? "(Size " + product.ringSize + ")" : product.clothingSize ? "(Size " + product.clothingSize + ")" : ""}</p>
-</td>
+      <p>${product.name} ${product.ringSize ? "(Size " + product.ringSize + ")" : product.clothingSize ? "(Size " + product.clothingSize + ")" : product.shoesSize ? "(Size " + product.shoesSize + ")" : ""}</p>
+  </td>
 
   <td class="text">
     <p>${product.quantity}</p>
